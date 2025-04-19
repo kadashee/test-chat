@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 30px;
+    border-bottom: 1px solid #e1e1e3;
+    flex-shrink: 0;
+    background-color: white;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+.header input::placeholder {
+    color: #2E2E2E;
+    font-size: 12px;
+    text-align: center;
+}
+
+.input-relative {
+    position: relative;
+}
+
+.header-find {
+    display: block;
+    min-width: 600px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid #2E2E2E;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.absolute-find {
+    position: absolute;
+    top: 3px;
+    left: 265px;
+}
+
+.header-settings {
+    display: flex;
+    gap: 20px;
+}
+
+.chat {
+    display: flex;
+    flex-grow: 1;
+    width: 100vw;
+    min-width: 100vw;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.chat-users {
+    width: 200px;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    background-color: white;
+    font-size: 16px;
+    overflow-y: auto;
+}
+
+.chat-users p {
+    margin: 0;
+    padding: 20px 20px;
+    border-bottom: 1px solid #e1e1e3;
+    background-color: white;
+    color: #2E2E2E;
+}
+
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 0 16px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    overflow-y: auto;
+}
+
+.chat-messages p {
+    padding: 5px 10px;
+    background-color: #dedcff;
+    border-radius: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    padding: 0 30px;
+    gap: 30px;
+    border-top: 1px solid #e1e1e3;
+    flex-shrink: 0;
+    background-color: #2f27ce;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer::placeholder {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-type {
+    width: 100%;
+    height: 40%;
+    padding: 10px 20px;
+    border: 1px solid white;
+    outline: none;
+    background-color: #2f27ce;
+    color: white;
+    border-radius: 40px;
+}
